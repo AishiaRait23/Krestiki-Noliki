@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fon1"
+    tools:context=".AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/text_view_p3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="119dp"
+        android:layout_marginBottom="26dp"
+        android:background="#55000000"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/text_view_p4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Игроки по очереди ставят на свободные клетки поля 3×3 знаки (один всегда крестики, другой всегда нолики). Первый, выстроивший в ряд 3 своих фигуры по вертикали, горизонтали или большой диагонали, выигрывает. Если игроки заполнили все 9 ячеек и оказалось, что ни в одной вертикали, горизонтали или большой диагонали нет трёх одинаковых знаков, партия считается закончившейся в ничью. Первый ход делает игрок, ставящий крестики."
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="123dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="49dp"
+        android:onClick="goBackToMainMenu"
+        android:text="Назад" />
+
+    <TextView
+        android:id="@+id/text_view_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="27dp"
+        android:gravity="center"
+        android:text="Правила игры"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/text_view_p1"
+        android:layout_width="117dp"
+        android:layout_height="87dp"
+
+        android:layout_above="@+id/btnBack"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:text="Гусева А. Замараева Т. Кабанова А."
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_view_p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/text_view_p1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Разработчики:"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+</RelativeLayout>
